@@ -1,73 +1,42 @@
-# Welcome to your Lovable project
+What I Built
+I created a vibrant and interactive Pride Month landing page that celebrates love, diversity, and LGBTQ+ history. The page features:
 
-## Project info
+Interactive CSS Art Pride Flag - A clickable animated Pride flag that triggers colorful fireworks when clicked
+Dynamic Animations - Floating hearts, stars, and rainbow elements with hover effects throughout the page
+Comprehensive History Section - Timeline covering the Stonewall Riots (1969), first Pride March (1970), and creation of the Rainbow Flag (1978)
+Pride Colors Explanation - Interactive cards showing the meaning behind each color of the Pride flag
+Community Section - Emphasis on love, unity, and pride with animated hover effects
+Functional Call-to-Actions - "Learn More" button linking to Wikipedia's Pride Month page and "Get Involved" button connecting to a Pride Discord community
+The design uses a modern gradient background, CSS animations, and responsive design principles to create an engaging, celebratory experience.
 
-**URL**: https://lovable.dev/projects/3526d7d0-5493-412a-92c8-761f914ccfc7
+Demo
+Live Features:
 
-## How can I edit this code?
+Click the Pride flag in the hero section to see fireworks! 🎆
+Hover over timeline items, color cards, and community sections for interactive animations
+Responsive design that works on all devices
+Smooth transitions and gradient effects throughout
+Key Technologies:
 
-There are several ways of editing your application.
+React with TypeScript
+Tailwind CSS for styling
+Lucide React for icons
+Custom CSS animations and keyframes
+Responsive grid layouts
+Journey
+Process & Learning: This project was an exciting journey in combining meaningful content with engaging visual design. I focused on creating CSS art that wasn't just decorative but interactive and meaningful.
 
-**Use Lovable**
+What I'm Proud Of:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3526d7d0-5493-412a-92c8-761f914ccfc7) and start prompting.
+Interactive Fireworks Animation - The clickable Pride flag that triggers a burst of colorful fireworks and sparkles
+Comprehensive CSS Art - Multiple animated elements including floating shapes, rainbow hearts, and gradient backgrounds
+Educational Content - Balancing celebration with historical education about Pride's origins
+Accessibility - Maintaining good contrast ratios and semantic HTML structure
+Performance - Smooth animations that don't compromise page performance
+Technical Highlights:
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3526d7d0-5493-412a-92c8-761f914ccfc7) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Custom CSS keyframe animations for flag waving, heart beating, and firework explosions
+Dynamic gradient backgrounds that shift and pulse
+Hover effects that transform cards with scaling, rotation, and color changes
+Responsive design using CSS Grid and Flexbox
+](https://june-pride-month.netlify.app/)
