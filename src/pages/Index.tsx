@@ -1,4 +1,5 @@
 
+
 import { Heart, Calendar, Users, Flag, Sparkles, ArrowRight, Rainbow, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -21,7 +22,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-orange-100 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 via-blue-200 via-green-200 via-yellow-200 to-red-200 relative overflow-hidden">
       {/* Fireworks Container */}
       {showFireworks && (
         <div className="fixed inset-0 pointer-events-none z-50">
@@ -45,32 +46,43 @@ const Index = () => {
         </div>
       )}
 
-      {/* Floating Animated Background Elements */}
+      {/* Enhanced Floating Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full animate-bounce opacity-70"></div>
-        <div className="absolute top-32 right-20 w-12 h-12 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full animate-pulse opacity-80"></div>
-        <div className="absolute bottom-40 left-1/4 w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-bounce opacity-60" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 right-1/3 w-8 h-8 bg-gradient-to-r from-green-400 to-teal-500 rounded-full animate-pulse opacity-70" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-20 right-10 w-14 h-14 bg-gradient-to-r from-red-400 to-pink-500 rounded-full animate-bounce opacity-65" style={{animationDelay: '0.5s'}}></div>
+        <div className="absolute top-10 left-10 w-24 h-24 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full animate-bounce opacity-80 shadow-2xl"></div>
+        <div className="absolute top-32 right-20 w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full animate-pulse opacity-90 shadow-xl"></div>
+        <div className="absolute bottom-40 left-1/4 w-20 h-20 bg-gradient-to-r from-yellow-500 to-orange-600 rounded-full animate-bounce opacity-75 shadow-2xl" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 right-1/3 w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-full animate-pulse opacity-85 shadow-xl" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-20 right-10 w-18 h-18 bg-gradient-to-r from-red-500 to-pink-600 rounded-full animate-bounce opacity-80 shadow-2xl" style={{animationDelay: '0.5s'}}></div>
         
-        {/* Floating Hearts */}
-        <div className="absolute top-20 left-1/2 text-pink-400 animate-bounce opacity-60" style={{animationDelay: '1.5s'}}>
-          <Heart className="w-8 h-8" fill="currentColor" />
+        {/* Enhanced Floating Hearts and Stars */}
+        <div className="absolute top-20 left-1/2 text-pink-500 animate-bounce opacity-80 drop-shadow-lg" style={{animationDelay: '1.5s'}}>
+          <Heart className="w-10 h-10" fill="currentColor" />
         </div>
-        <div className="absolute bottom-32 right-1/4 text-purple-400 animate-pulse opacity-70" style={{animationDelay: '3s'}}>
-          <Star className="w-6 h-6" fill="currentColor" />
+        <div className="absolute bottom-32 right-1/4 text-purple-500 animate-pulse opacity-90 drop-shadow-lg" style={{animationDelay: '3s'}}>
+          <Star className="w-8 h-8" fill="currentColor" />
         </div>
-        <div className="absolute top-1/3 left-20 text-blue-400 animate-bounce opacity-50" style={{animationDelay: '2.5s'}}>
-          <Sparkles className="w-10 h-10" />
+        <div className="absolute top-1/3 left-20 text-blue-500 animate-bounce opacity-70 drop-shadow-lg" style={{animationDelay: '2.5s'}}>
+          <Sparkles className="w-12 h-12" />
+        </div>
+        
+        {/* Additional colorful elements */}
+        <div className="absolute top-24 right-1/2 text-yellow-500 animate-pulse opacity-75 drop-shadow-lg" style={{animationDelay: '1.8s'}}>
+          <Rainbow className="w-10 h-10" />
+        </div>
+        <div className="absolute bottom-48 left-1/3 text-green-500 animate-bounce opacity-80 drop-shadow-lg" style={{animationDelay: '2.2s'}}>
+          <Flag className="w-9 h-9" />
         </div>
       </div>
 
       {/* Hero Section with Enhanced CSS Art */}
       <section className="relative overflow-hidden">
         {/* Enhanced Animated Pride Flag Background */}
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 opacity-40">
           <div className="pride-flag-bg h-full animate-fade-in"></div>
         </div>
+        
+        {/* Additional colorful overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-red-300/20 via-yellow-300/20 via-green-300/20 via-blue-300/20 to-purple-300/20 animate-pulse"></div>
         
         <div className="relative z-10 container mx-auto px-6 py-20">
           <div className="text-center max-w-4xl mx-auto">
@@ -81,20 +93,20 @@ const Index = () => {
             ></div>
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
-              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent hover:from-red-500 hover:via-yellow-500 hover:to-green-500 transition-all duration-1000 cursor-pointer">
+              <span className="bg-gradient-to-r from-red-600 via-yellow-500 via-green-500 via-blue-500 via-purple-600 to-pink-600 bg-clip-text text-transparent hover:from-red-500 hover:via-orange-500 hover:via-yellow-500 hover:via-green-500 hover:via-blue-500 hover:to-purple-500 transition-all duration-1000 cursor-pointer drop-shadow-lg">
                 Pride
               </span>
-              <span className="text-gray-800 ml-4 hover:text-purple-600 transition-colors duration-500">Month</span>
+              <span className="text-gray-800 ml-4 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 hover:bg-clip-text hover:text-transparent transition-all duration-500 drop-shadow-md">Month</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed animate-fade-in hover:text-gray-900 transition-colors duration-300">
-              Celebrating love, diversity, and the courage to be authentically yourself ✨
+            <p className="text-xl md:text-2xl text-gray-800 mb-8 leading-relaxed animate-fade-in hover:text-purple-700 transition-colors duration-300 font-medium drop-shadow-sm">
+              Celebrating love, diversity, and the courage to be authentically yourself ✨🏳️‍🌈
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
               <Button 
                 onClick={handleLearnMore}
-                className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-xl animate-pulse"
+                className="bg-gradient-to-r from-pink-600 to-purple-700 hover:from-pink-700 hover:to-purple-800 text-white px-8 py-3 rounded-full text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-2xl animate-pulse shadow-lg border-2 border-pink-300"
               >
                 <Heart className="mr-2 h-5 w-5" />
                 Learn More
@@ -246,3 +258,4 @@ const Index = () => {
 };
 
 export default Index;
+
