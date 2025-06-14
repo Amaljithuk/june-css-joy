@@ -1,3 +1,4 @@
+
 import { Heart, Calendar, Users, Flag, Sparkles, ArrowRight, Rainbow, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,6 +10,14 @@ const Index = () => {
   const handleFlagClick = () => {
     setShowFireworks(true);
     setTimeout(() => setShowFireworks(false), 3000); // Remove fireworks after 3 seconds
+  };
+
+  const handleLearnMore = () => {
+    window.open('https://en.wikipedia.org/wiki/Pride_Month', '_blank');
+  };
+
+  const handleGetInvolved = () => {
+    window.open('https://discord.com/invite/pride', '_blank');
   };
 
   return (
@@ -83,13 +92,12 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
-              <Button className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-xl animate-pulse">
+              <Button 
+                onClick={handleLearnMore}
+                className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full text-lg transition-all duration-500 transform hover:scale-110 hover:shadow-xl animate-pulse"
+              >
                 <Heart className="mr-2 h-5 w-5" />
                 Learn More
-              </Button>
-              <Button variant="outline" className="border-2 border-purple-400 text-purple-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:border-transparent px-8 py-3 rounded-full text-lg transition-all duration-500 hover:scale-105 hover:shadow-lg">
-                <Calendar className="mr-2 h-5 w-5" />
-                Find Events
               </Button>
             </div>
           </div>
@@ -214,7 +222,10 @@ const Index = () => {
               </Card>
             </div>
             
-            <Button className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 hover:shadow-2xl text-white px-12 py-4 rounded-full text-lg transition-all duration-500 transform hover:scale-110 shadow-lg animate-pulse hover:animate-bounce">
+            <Button 
+              onClick={handleGetInvolved}
+              className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 hover:shadow-2xl text-white px-12 py-4 rounded-full text-lg transition-all duration-500 transform hover:scale-110 shadow-lg animate-pulse hover:animate-bounce"
+            >
               <span>Get Involved</span>
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
