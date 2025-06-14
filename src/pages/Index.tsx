@@ -1,11 +1,41 @@
-
 import { Heart, Calendar, Users, Flag, Sparkles, ArrowRight, Rainbow, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
 
 const Index = () => {
+  const [showFireworks, setShowFireworks] = useState(false);
+
+  const handleFlagClick = () => {
+    setShowFireworks(true);
+    setTimeout(() => setShowFireworks(false), 3000); // Remove fireworks after 3 seconds
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-orange-100 relative overflow-hidden">
+      {/* Fireworks Container */}
+      {showFireworks && (
+        <div className="fixed inset-0 pointer-events-none z-50">
+          {/* Multiple firework bursts */}
+          <div className="firework firework-1"></div>
+          <div className="firework firework-2"></div>
+          <div className="firework firework-3"></div>
+          <div className="firework firework-4"></div>
+          <div className="firework firework-5"></div>
+          <div className="firework firework-6"></div>
+          
+          {/* Sparkle effects */}
+          <div className="sparkle sparkle-1"></div>
+          <div className="sparkle sparkle-2"></div>
+          <div className="sparkle sparkle-3"></div>
+          <div className="sparkle sparkle-4"></div>
+          <div className="sparkle sparkle-5"></div>
+          <div className="sparkle sparkle-6"></div>
+          <div className="sparkle sparkle-7"></div>
+          <div className="sparkle sparkle-8"></div>
+        </div>
+      )}
+
       {/* Floating Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full animate-bounce opacity-70"></div>
@@ -35,8 +65,11 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-6 py-20">
           <div className="text-center max-w-4xl mx-auto">
-            {/* Enhanced CSS Art Pride Flag with hover effects */}
-            <div className="pride-flag mx-auto mb-8 animate-scale-in hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl"></div>
+            {/* Enhanced CSS Art Pride Flag with hover effects and click handler */}
+            <div 
+              className="pride-flag mx-auto mb-8 animate-scale-in hover:scale-110 transition-transform duration-500 cursor-pointer shadow-2xl" 
+              onClick={handleFlagClick}
+            ></div>
             
             <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
               <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent hover:from-red-500 hover:via-yellow-500 hover:to-green-500 transition-all duration-1000 cursor-pointer">

@@ -198,6 +198,87 @@
     animation: rainbow-shift 3s linear infinite reverse;
   }
 
+  /* Fireworks CSS Art */
+  .firework {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    animation: firework-explosion 1.5s ease-out;
+  }
+
+  .firework::before,
+  .firework::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: inherit;
+  }
+
+  .firework-1 {
+    top: 20%;
+    left: 20%;
+    background: radial-gradient(circle, #ff0040, #ff8c00);
+    animation-delay: 0s;
+  }
+
+  .firework-2 {
+    top: 30%;
+    left: 80%;
+    background: radial-gradient(circle, #ffed00, #008018);
+    animation-delay: 0.3s;
+  }
+
+  .firework-3 {
+    top: 60%;
+    left: 15%;
+    background: radial-gradient(circle, #004cff, #732982);
+    animation-delay: 0.6s;
+  }
+
+  .firework-4 {
+    top: 15%;
+    left: 60%;
+    background: radial-gradient(circle, #e40303, #ff8c00);
+    animation-delay: 0.9s;
+  }
+
+  .firework-5 {
+    top: 70%;
+    left: 70%;
+    background: radial-gradient(circle, #ffed00, #008018);
+    animation-delay: 1.2s;
+  }
+
+  .firework-6 {
+    top: 45%;
+    left: 50%;
+    background: radial-gradient(circle, #004cff, #732982);
+    animation-delay: 1.5s;
+  }
+
+  /* Sparkle Effects */
+  .sparkle {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    animation: sparkle-twinkle 2s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+
+  .sparkle-1 { top: 25%; left: 25%; animation-delay: 0.1s; }
+  .sparkle-2 { top: 35%; left: 75%; animation-delay: 0.4s; }
+  .sparkle-3 { top: 65%; left: 20%; animation-delay: 0.7s; }
+  .sparkle-4 { top: 20%; left: 65%; animation-delay: 1.0s; }
+  .sparkle-5 { top: 75%; left: 75%; animation-delay: 1.3s; }
+  .sparkle-6 { top: 50%; left: 10%; animation-delay: 1.6s; }
+  .sparkle-7 { top: 40%; left: 90%; animation-delay: 1.9s; }
+  .sparkle-8 { top: 80%; left: 50%; animation-delay: 2.2s; }
+
   /* Enhanced Timeline Styles */
   .timeline-item {
     position: relative;
@@ -301,6 +382,66 @@
 @keyframes marker-glow {
   0% { box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), 0 0 20px rgba(128, 0, 128, 0.3); }
   100% { box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 0, 255, 0.6); }
+}
+
+/* Fireworks Animations */
+@keyframes firework-explosion {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+    box-shadow: 
+      0 0 0 2px #ff0040,
+      0 0 0 4px #ff8c00,
+      0 0 0 6px #ffed00,
+      0 0 0 8px #008018,
+      0 0 0 10px #004cff,
+      0 0 0 12px #732982;
+  }
+  25% {
+    transform: scale(2) rotate(90deg);
+    opacity: 0.8;
+    box-shadow: 
+      0 0 20px 2px #ff0040,
+      10px 10px 20px 4px #ff8c00,
+      -10px 10px 20px 6px #ffed00,
+      10px -10px 20px 8px #008018,
+      -10px -10px 20px 10px #004cff,
+      0 0 20px 12px #732982;
+  }
+  50% {
+    transform: scale(4) rotate(180deg);
+    opacity: 0.6;
+    box-shadow: 
+      0 0 40px 4px #ff0040,
+      20px 20px 40px 8px #ff8c00,
+      -20px 20px 40px 12px #ffed00,
+      20px -20px 40px 16px #008018,
+      -20px -20px 40px 20px #004cff,
+      0 0 40px 24px #732982;
+  }
+  100% {
+    transform: scale(6) rotate(360deg);
+    opacity: 0;
+    box-shadow: 
+      0 0 60px 6px transparent,
+      30px 30px 60px 12px transparent,
+      -30px 30px 60px 18px transparent,
+      30px -30px 60px 24px transparent,
+      -30px -30px 60px 30px transparent,
+      0 0 60px 36px transparent;
+  }
+}
+
+@keyframes sparkle-twinkle {
+  0%, 100% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5) rotate(180deg);
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
 }
 
 @keyframes fade-in {
